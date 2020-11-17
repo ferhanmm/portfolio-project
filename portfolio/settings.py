@@ -133,6 +133,9 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-#LNBXMn628HWsuw^B
+try:
+    from local_settings import *
+except ImportError:
+    pass
 
 
